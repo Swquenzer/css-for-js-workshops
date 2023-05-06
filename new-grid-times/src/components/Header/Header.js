@@ -29,6 +29,14 @@ const Header = () => {
         </Row>
       </SuperHeader>
       <MainHeader>
+          <ActionGroup>
+            <button>
+              <Search size={24} />
+            </button>
+            <button>
+              <Menu size={24} />
+            </button>
+          </ActionGroup>
         <Logo />
       </MainHeader>
     </header>
@@ -39,6 +47,10 @@ const SuperHeader = styled.div`
   padding: 16px 0;
   background: var(--color-gray-900);
   color: white;
+
+  @media (${QUERIES.laptopAndUp}) {
+    display: none;
+  }
 `;
 
 const Row = styled(MaxWidthWrapper)`

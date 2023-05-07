@@ -1,0 +1,8 @@
+.answer-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.answer-input {
+    font-size: 1.5rem;
+}
